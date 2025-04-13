@@ -20,6 +20,9 @@ from datetime import date, datetime
 import pytz
 from aiohttp import web
 from plugins import web_server
+import pyrogram.utils
+
+pyrogram.utils.MIN_CHANNEL_ID = -1002592134690
 
 class Bot(Client):
 
