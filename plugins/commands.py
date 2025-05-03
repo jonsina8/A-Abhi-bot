@@ -126,7 +126,7 @@ async def start(client, message):
             text = "Hey {},\nYou are not Verified Today, Please Verify and Get Unlimited access for Today."
             await message.reply_text(
                 text=text.format(message.from_user.mention),
-                PROTECT_CONTENT=True,
+                protect_content=True,
                 reply_markup=InlineKeyboardButton(btn)
             )
             return
@@ -208,7 +208,7 @@ async def start(client, message):
             text = "Hey {},\nYou are not Verified Today, Please Verify and Get Unlimited access for Today."
             await message.reply_text(
                 text=text.format(message.from_user.mention),
-                PROTECT_CONTENT=True,
+                protect_content=True,
                 reply_markup=InlineKeyboardButton(btn)
             )
             return
