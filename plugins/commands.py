@@ -120,14 +120,12 @@ async def start(client, message):
         if not await check_verification(client, message.from_user.id) and VERIFY == True:
             btn = [[
                 InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
-            ],[
-                InlineKeyboardButton("Tutorial to Verify", url=TUTORIAL)
             ]]
             text = "Hey {},\nYou are not Verified Today, Please Verify and Get Unlimited access for Today."
             await message.reply_text(
                 text=text.format(message.from_user.mention),
                 protect_content=True,
-                reply_markup=InlineKeyboardButton(btn)
+                reply_markup=InlineKeyboardMarkup(btn)
             )
             return
         sts = await message.reply("<b>Please wait...</b>")
@@ -202,8 +200,6 @@ async def start(client, message):
         if not await check_verification(client, message.from_user.id) and VERIFY == True:
             btn = [[
                 InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
-            ],[
-                InlineKeyboardButton("Tutorial to Verify", url=TUTORIAL)
             ]]
             text = "Hey {},\nYou are not Verified Today, Please Verify and Get Unlimited access for Today."
             await message.reply_text(
@@ -345,8 +341,6 @@ async def start(client, message):
                 if not await check_verification(client, message.from_user.id) and VERIFY == True:
                     btn = [[
                         InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
-                    ],[
-                        InlineKeyboardButton("Tutorial to Verify", url=TUTORIAL)
                     ]]
                     await message.reply_text(
                         text="<b>You are not verified !\nKindly verify to continue !</b>",
@@ -406,8 +400,6 @@ async def start(client, message):
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
                 btn = [[
                     InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
-                ],[
-                    InlineKeyboardButton("Tutorial to Verify", url=TUTORIAL)
                 ]]
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue !</b>",
@@ -464,8 +456,6 @@ async def start(client, message):
         if not await check_verification(client, message.from_user.id) and VERIFY == True:
             btn = [[
                 InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
-            ],[
-                InlineKeyboardButton("Tutorial to Verify", url=TUTORIAL)
             ]]
             await message.reply_text(
                 text="<b>You are not verified !\nKindly verify to continue !</b>",
