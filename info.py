@@ -49,9 +49,9 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'https://indiaearnx.com')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'indiaearnx.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '4648f3b9a330674316e0cf01a7b5e8611e4fcd8a)
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'https://indiaearnx.com')
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'indiaearnx.com')
 SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '4648f3b9a330674316e0cf01a7b5e8611e4fcd8a)
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
