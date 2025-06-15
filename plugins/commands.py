@@ -724,7 +724,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(l
-                    'Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ',
+                    'Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ ',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
