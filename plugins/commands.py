@@ -744,7 +744,7 @@ async def settings(client, message):
                     '✔ Oɴ' if settings["auto_ffilter"] else '✘ Oғғ',
                     callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{grp_id}',
                 ),
-            ],
+            ),
             [
                 InlineKeyboardButton(
                     'Mᴀx Bᴜᴛᴛᴏɴs',
