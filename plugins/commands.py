@@ -672,7 +672,7 @@ async def settings(client, message):
                     callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
                 ),
             ],
-            [
+        )
                 InlineKeyboardButton(
                     'Fɪʟᴇ Sᴇɴᴅ Mᴏᴅᴇ',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
