@@ -673,10 +673,15 @@ async def settings(client, message):
                 ),
             ],
         )
-                InlineKeyboardButton(
-                    'Fɪʟᴇ Sᴇɴᴅ Mᴏᴅᴇ',
-                    callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
-                ),
+        #changing middle part
+             InlineKeyboardMarkup([
+    [InlineKeyboardButton(
+        "Text",
+        callback_data="something"
+    )]
+])   
+
+    #changing middle part
                 InlineKeyboardButton(
                     'Mᴀɴᴜᴀʟ Sᴛᴀʀᴛ' if settings["botpm"] else 'Aᴜᴛᴏ Sᴇɴᴅ',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
