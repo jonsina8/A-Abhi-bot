@@ -674,8 +674,8 @@ async def settings(client, message):
             ],
         )
         #changing middle part
-             InlineKeyboardMarkup([
-    [InlineKeyboardButton()]
+             InlineKeyboardMarkup(
+    [InlineKeyboardButton(
         "Text",
         callback_data="something"
     )]
