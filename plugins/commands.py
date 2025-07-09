@@ -673,7 +673,7 @@ async def settings(client, message):
                 ),
             ],
         )
-        #changing middle part
+        #changing middle part(
              InlineKeyboardMarkup(
     InlineKeyboardButton(
         "Text",
